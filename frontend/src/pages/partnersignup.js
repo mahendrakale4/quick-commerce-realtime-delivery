@@ -30,13 +30,13 @@ const Signup = () => {
 
         try {
             // TODO: Replace with your actual API endpoint
-            const response = await api.post('/api/auth/signup', {
+            const response = await api.post('/api/auth/partnersignup', {
                 email: formData.email,
                 password: formData.password
             });
 
             if (response.data) {
-                navigate('/login'); // Redirect to login page after successful signup
+                navigate('/partnerlogin'); // Redirect to login page after successful signup
             }
         } catch (err) {
             setError(err.response?.data?.message || 'An error occurred during signup');

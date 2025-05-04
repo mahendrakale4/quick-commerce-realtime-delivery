@@ -1,18 +1,25 @@
+/* General styles for the App */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This makes sure the content takes up at least the full height of the page */
   text-align: center;
 }
 
+/* Styling for the logo (if you are using one) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation for the logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +31,48 @@
   color: white;
 }
 
+/* Links in the app */
 .App-link {
   color: #61dafb;
 }
 
+/* Navigation bar */
+nav {
+  padding: 10px;
+  background-color: #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+footer a {
+  color: white; /* Make footer links white */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #61dafb; /* Optional hover color */
+}
+nav a:hover {
+  color: #61dafb; /* Optional hover color */
+}
+/* Keyframe animation for spinning the logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -25,7 +25,7 @@ const Login = () => {
 
         try {
 
-            const response = await api.post('/api/auth/login', {
+            const response = await api.post('/api/auth/partnerlogin', {
                 email: formData.email,
                 password: formData.password
             });
